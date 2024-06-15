@@ -3,6 +3,8 @@
     "@fortawesome/fontawesome-free": "^6.5.2",
     "@material-tailwind/react": "^2.1.9",
     "react-icon": "^1.0.0",
-    "react-router-dom": "^6.23.1"
+    "react-router-dom": "^6.23.1",
+    "react-slick": "^0.30.2",
+    "slick-carousel": "^1.8.1"
   }
 }

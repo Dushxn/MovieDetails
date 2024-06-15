@@ -1,6 +1,7 @@
 import React from 'react'
 import MovieCard from './components/MovieCard'
 import { useState, useEffect } from 'react'
+import TvCard from './components/TvCard'
 
 const Homepage = () => {
 
@@ -45,7 +46,7 @@ const Homepage = () => {
           <a href=""><h4 className='mt-10 bg-black text-white p-2 rounded hover:text-cyan-400 '>See more</h4></a>
         </div>
       </div>
-       <MovieCard data={series}/>
+       <TvCard data={series}/>
     </div>
   )
 }

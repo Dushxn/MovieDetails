@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import TvRow from './components/TvRow';
+import { Link } from 'react-router-dom';
 
 const TvShows = () => {
 
@@ -53,7 +54,7 @@ const TvShows = () => {
           <h1 className="text-3xl text-center font-bold text-black mt-32 ml-5">Airing Today</h1>
         </div>
         <div>
-          <a href=""><h4 className='mr-8 mt-32 bg-black text-white p-2 rounded hover:text-cyan-400 '>See more</h4></a>
+        <Link to={`/airtoday`}>  <a href=""><h4 className='mr-8 mt-32 bg-black text-white p-2 rounded hover:text-cyan-400 '>See more</h4></a></Link>
         </div>
         <div>
           <TvRow data={nowPlay} />
@@ -65,7 +66,7 @@ const TvShows = () => {
           <h1 className="text-3xl text-center font-bold text-black mt-32 ml-5">On the Air</h1>
         </div>
         <div>
-          <a href=""><h4 className='mr-8 mt-32 bg-black text-white p-2 rounded hover:text-cyan-400 '>See more</h4></a>
+        <Link to={`/onair`}> <a href=""><h4 className='mr-8 mt-32 bg-black text-white p-2 rounded hover:text-cyan-400 '>See more</h4></a></Link> 
         </div>
         <div>
           <TvRow data={upcome} />
@@ -77,7 +78,7 @@ const TvShows = () => {
           <h1 className="text-3xl text-center font-bold text-black mt-32 ml-5">Popular Shows</h1>
         </div>
         <div>
-          <a href=""><h4 className='mr-8 mt-32 bg-black text-white p-2 rounded hover:text-cyan-400 '>See more</h4></a>
+        <Link to={`/popularshow`}>  <a href=""><h4 className='mr-8 mt-32 bg-black text-white p-2 rounded hover:text-cyan-400 '>See more</h4></a></Link>
         </div>
         <div>
           <TvRow data={pop} />
@@ -89,7 +90,7 @@ const TvShows = () => {
           <h1 className="text-3xl text-center font-bold text-black mt-32 ml-5">Top Rated </h1>
         </div>
         <div>
-          <a href=""><h4 className='mr-8 mt-32 bg-black text-white p-2 rounded hover:text-cyan-400 '>See more</h4></a>
+        <Link to={`/topratedshow`}>  <a href=""><h4 className='mr-8 mt-32 bg-black text-white p-2 rounded hover:text-cyan-400 '>See more</h4></a></Link>
         </div>
         <div>
           <TvRow data={top} />

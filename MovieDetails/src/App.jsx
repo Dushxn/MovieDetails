@@ -11,6 +11,10 @@ import { AllMovies, } from './Pages/components/AllMovies';
 import Upcoming from './Pages/components/Upcoming';
 import Popular from './Pages/components/Popular';
 import TopRated from './Pages/components/TopRated';
+import AirToday from './Pages/components/AirToday';
+import OnAir from './Pages/components/OnAir';
+import PopularShow from './Pages/components/PopularShow';
+import TopRatedShow from './Pages/components/TopRatedShow.jsx';
 
 function App() {
   return (
@@ -28,6 +32,10 @@ function App() {
           <Route path='/upcoming' element={<Upcoming />} />
           <Route path='/popular' element={<Popular />} />
           <Route path='/toprated' element={<TopRated />} />
+          <Route path='/airtoday' element={<AirToday />} />
+          <Route path='/onair' element={<OnAir />} />
+          <Route path='/popularshow' element={<PopularShow />} />
+          <Route path='/topratedshow' element={<TopRatedShow />} />
         </Routes>
       </Layout>
     </Router>

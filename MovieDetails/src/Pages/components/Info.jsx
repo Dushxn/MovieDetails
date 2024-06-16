@@ -131,7 +131,7 @@ const Info = () => {
       </div>
       <h1 className='text-3xl font-bold text-black mt-20 text-center mb-10'>Recommendations</h1>
       <div className='flex flex-wrap justify-around mt-10 mx-5'>
-      {recommendations1.slice(0,6).map((movie) => (
+      {recommendations1.filter(movie => movie.poster_path).slice(0,6).map((movie) => (
         <div key={movie.id} className='max-w-2xs rounded overflow-hidden shadow-lg mb-5'>
           <Link to={`/info/${movie.id}`} >
           <img className='w-full' src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title} />

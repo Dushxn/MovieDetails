@@ -2,6 +2,7 @@ import React from 'react'
 import MovieCard from './components/MovieCard'
 import { useState, useEffect } from 'react'
 import TvCard from './components/TvCard'
+import { Link } from 'react-router-dom';
 
 const Homepage = () => {
 
@@ -33,7 +34,7 @@ const Homepage = () => {
           <h1 className="text-3xl text-center font-bold text-black mt-32">Popular Movies</h1>
         </div>
         <div>
-          <a href=""><h4 className='mt-32 bg-black text-white p-2 rounded hover:text-cyan-400 '>See more</h4></a>
+        <Link to={`/popular`}>  <a href=""><h4 className='mt-32 bg-black text-white p-2 rounded hover:text-cyan-400 '>See more</h4></a></Link>
         </div>
       </div>
        <MovieCard data={movies}/>
@@ -43,7 +44,7 @@ const Homepage = () => {
           <h1 className="text-3xl text-center font-bold text-black mt-10">Popular Tv Shows</h1>
         </div>
         <div>
-          <a href=""><h4 className='mt-10 bg-black text-white p-2 rounded hover:text-cyan-400 '>See more</h4></a>
+        <Link to={`/popularshow`}>  <a href=""><h4 className='mt-10 bg-black text-white p-2 rounded hover:text-cyan-400 '>See more</h4></a></Link>
         </div>
       </div>
        <TvCard data={series}/>

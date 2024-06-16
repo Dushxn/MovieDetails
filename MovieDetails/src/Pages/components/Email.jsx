@@ -12,6 +12,7 @@ const Email = () => {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
+    
   };
 
   const handleSubmit = (e) => {
@@ -26,10 +27,12 @@ const Email = () => {
     .then((result) => {
         console.log(result.text);
         alert('Message sent successfully');
+        window.location.reload()
     }, (error) => {
         console.log(error.text);
         alert('Failed to send the message, please try again later.');
     });
+    
   };
 
   return (

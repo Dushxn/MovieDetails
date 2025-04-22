@@ -49,48 +49,56 @@ const TvShows = () => {
 
   return (
     <>
-      <div className='flex flex-wrap justify-between mx-10'>
-        <div>
-          <h1 className="text-3xl text-center font-bold text-black mt-32 ml-5">Airing Today</h1>
-        </div>
-        <div>
-        <Link to={`/airtoday`}>  <a href=""><h4 className='mr-8 mt-32 bg-black text-white p-2 rounded hover:text-cyan-400 '>See more</h4></a></Link>
+      <div className='flex flex-col justify-between mx-10'>
+        <div className='flex justify-between'>
+          <div>
+            <h1 className="text-2xl sm:text-2xl md:text-2xl lg:text-3xl text-center font-bold text-black mt-32 ml-5">Airing Today</h1>
+          </div>
+          <div>
+            <Link to={`/airtoday`}>  <a href=""><h4 className='sm:text-md md:text-lg lg:text-lg mr-8 mt-32 bg-black text-white p-1 lg:p-2 rounded hover:text-cyan-400'>See more</h4></a></Link>
+          </div>
         </div>
         <div>
           <TvRow data={nowPlay} />
         </div>
       </div>
 
-      <div className='flex flex-wrap justify-between mx-10'>
-        <div>
-          <h1 className="text-3xl text-center font-bold text-black mt-32 ml-5">On the Air</h1>
-        </div>
-        <div>
-        <Link to={`/onair`}> <a href=""><h4 className='mr-8 mt-32 bg-black text-white p-2 rounded hover:text-cyan-400 '>See more</h4></a></Link> 
+      <div className='flex flex-col justify-between mx-10'>
+        <div className='flex justify-between'>
+          <div>
+            <h1 className="text-2xl sm:text-2xl md:text-2xl lg:text-3xl text-center font-bold text-black mt-32 ml-5">On the Air</h1>
+          </div>
+          <div>
+            <Link to={`/onair`}> <a href=""><h4 className='sm:text-md md:text-lg lg:text-lg mr-8 mt-32 bg-black text-white p-1 lg:p-2 rounded hover:text-cyan-400 '>See more</h4></a></Link>
+          </div>
         </div>
         <div>
           <TvRow data={upcome} />
         </div>
       </div>
 
-      <div className='flex flex-wrap justify-between mx-10'>
-        <div>
-          <h1 className="text-3xl text-center font-bold text-black mt-32 ml-5">Popular Shows</h1>
-        </div>
-        <div>
-        <Link to={`/popularshow`}>  <a href=""><h4 className='mr-8 mt-32 bg-black text-white p-2 rounded hover:text-cyan-400 '>See more</h4></a></Link>
+      <div className='flex flex-col justify-between mx-10'>
+        <div className='flex justify-between'>
+          <div>
+            <h1 className="text-2xl sm:text-2xl md:text-2xl lg:text-3xl text-center font-bold text-black mt-32 ml-5">Popular Shows</h1>
+          </div>
+          <div>
+            <Link to={`/popularshow`}>  <a href=""><h4 className='sm:text-md md:text-lg lg:text-lg mr-8 mt-32 bg-black text-white p-1 lg:p-2 rounded hover:text-cyan-400 '>See more</h4></a></Link>
+          </div>
         </div>
         <div>
           <TvRow data={pop} />
         </div>
       </div>
 
-      <div className='flex flex-wrap justify-between mx-10'>
+      <div className='flex flex-col justify-between mx-10'>
+      <div className='flex justify-between'>
         <div>
-          <h1 className="text-3xl text-center font-bold text-black mt-32 ml-5">Top Rated </h1>
+          <h1 className="text-2xl sm:text-2xl md:text-2xl lg:text-3xl text-center font-bold text-black mt-32 ml-5">Top Rated </h1>
         </div>
         <div>
-        <Link to={`/topratedshow`}>  <a href=""><h4 className='mr-8 mt-32 bg-black text-white p-2 rounded hover:text-cyan-400 '>See more</h4></a></Link>
+          <Link to={`/topratedshow`}>  <a href=""><h4 className='sm:text-md md:text-lg lg:text-lg mr-8 mt-32 bg-black text-white p-1 lg:p-2 rounded hover:text-cyan-400 '>See more</h4></a></Link>
+        </div>
         </div>
         <div>
           <TvRow data={top} />

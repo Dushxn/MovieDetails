@@ -5,6 +5,8 @@ const Upcoming = () => {
   const [nowPlaying, setNowPlaying] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
+ 
+  
 
   const fetchNowPlaying = async (page) => {
     try {
